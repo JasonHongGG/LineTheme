@@ -633,7 +633,7 @@ class _PreviewInfoRow extends StatelessWidget {
                     const SizedBox(height: 4),
                     Text(
                       _compactValue(),
-                      maxLines: label == '下載來源' ? 2 : 1,
+                      maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                       style: Theme.of(context).textTheme.titleMedium?.copyWith(
                         color: const Color(0xFF201E1C),
