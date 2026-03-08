@@ -1,5 +1,9 @@
 class InstalledTheme {
-  const InstalledTheme({required this.slot, required this.directoryName, required this.archiveUri});
+  const InstalledTheme({
+    required this.slot,
+    required this.directoryName,
+    required this.archiveUri,
+  });
 
   final String slot;
   final String directoryName;
@@ -7,7 +11,12 @@ class InstalledTheme {
 }
 
 class ThemeBundleInfo {
-  const ThemeBundleInfo({required this.coverUrl, required this.themeId, required this.version, required this.downloadUrl});
+  const ThemeBundleInfo({
+    required this.coverUrl,
+    required this.themeId,
+    required this.version,
+    required this.downloadUrl,
+  });
 
   final String coverUrl;
   final String themeId;
@@ -16,7 +25,11 @@ class ThemeBundleInfo {
 }
 
 class ThemeProcessProgress {
-  const ThemeProcessProgress({required this.value, required this.message, this.logLine});
+  const ThemeProcessProgress({
+    required this.value,
+    required this.message,
+    this.logLine,
+  });
 
   final double value;
   final String message;
@@ -24,7 +37,13 @@ class ThemeProcessProgress {
 }
 
 class ShizukuStatus {
-  const ShizukuStatus({required this.binderAvailable, required this.permissionGranted, required this.shouldShowRationale, required this.serviceVersion, required this.serverUid});
+  const ShizukuStatus({
+    required this.binderAvailable,
+    required this.permissionGranted,
+    required this.shouldShowRationale,
+    required this.serviceVersion,
+    required this.serverUid,
+  });
 
   final bool binderAvailable;
   final bool permissionGranted;

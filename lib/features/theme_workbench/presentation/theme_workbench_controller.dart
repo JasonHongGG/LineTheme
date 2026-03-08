@@ -10,7 +10,7 @@ class ThemeWorkbenchController extends ChangeNotifier with WidgetsBindingObserve
   ThemeWorkbenchController({LineThemeRepository? repository}) : _repository = repository ?? LineThemeRepository();
 
   final LineThemeRepository _repository;
-  final TextEditingController urlController = TextEditingController(text: 'https://store.line.me/themeshop/product/36a8914b-b9cf-4b8e-8d61-e5e572124440/zh-Hant');
+  final TextEditingController urlController = TextEditingController(text: 'https://store.line.me/themeshop/product/63d469be-e4c4-46d9-8822-bc8ddcc2fb0f/zh-Hant');
 
   ThemeWorkbenchState _state = const ThemeWorkbenchState();
   bool _initialized = false;

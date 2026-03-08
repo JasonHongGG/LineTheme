@@ -16,7 +16,14 @@ class LineStoreClient {
       throw const FormatException('LINE Theme URL 格式不正確。');
     }
 
-    final response = await _client.get(uri, headers: const <String, String>{'content-type': 'text/html; charset=UTF-8', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'});
+    final response = await _client.get(
+      uri,
+      headers: const <String, String>{
+        'content-type': 'text/html; charset=UTF-8',
+        'user-agent':
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+      },
+    );
 
     if (response.statusCode != HttpStatus.ok) {
       throw HttpException('讀取 LINE Store 頁面失敗，HTTP ${response.statusCode}');
@@ -28,7 +35,9 @@ class LineStoreClient {
       throw const FormatException('找不到主題封面圖，無法推算版本號。');
     }
 
-    final normalizedCoverUrl = coverUrl.startsWith('//') ? 'https:$coverUrl' : coverUrl;
+    final normalizedCoverUrl = coverUrl.startsWith('//')
+        ? 'https:$coverUrl'
+        : coverUrl;
     final coverUri = Uri.parse(normalizedCoverUrl);
     final segments = coverUri.pathSegments;
     final productsIndex = segments.indexOf('products');
@@ -49,7 +58,12 @@ class LineStoreClient {
       '$themeId/$version/ANDROID/theme.zip',
     );
 
-    return ThemeBundleInfo(coverUrl: normalizedCoverUrl, themeId: themeId, version: version, downloadUrl: downloadUrl);
+    return ThemeBundleInfo(
+      coverUrl: normalizedCoverUrl,
+      themeId: themeId,
+      version: version,
+      downloadUrl: downloadUrl,
+    );
   }
 
   Future<List<int>> downloadThemeBundle(Uri downloadUrl) async {
@@ -66,7 +80,10 @@ class LineStoreClient {
   }
 
   String? _extractCoverUrl(String htmlSource) {
-    final match = RegExp(r'''(https?:)?//shop\.line-scdn\.net/themeshop/v1/products/[^"']+/icon_198x278\.png''', caseSensitive: false).firstMatch(htmlSource);
+    final match = RegExp(
+      r'''(https?:)?//shop\.line-scdn\.net/themeshop/v1/products/[^"']+/icon_198x278\.png''',
+      caseSensitive: false,
+    ).firstMatch(htmlSource);
 
     return match?.group(0);
   }
