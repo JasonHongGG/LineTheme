@@ -1,0 +1,76 @@
+# Python tool outputs
+Line Theme/Output/
+Line Theme/TargetTheme/
+Line Theme/ThemeZIP.zip
+Line Theme/__pycache__/
+Line Theme/*.pyc
+Line Theme/
+
+# Flutter project artifacts
+line_theme_tester/.dart_tool/
+line_theme_tester/.flutter-plugins
+line_theme_tester/.flutter-plugins-dependencies
+line_theme_tester/.packages
+line_theme_tester/.pub-cache/
+line_theme_tester/build/
+line_theme_tester/android/.gradle/
+line_theme_tester/android/local.properties
+line_theme_tester/*.iml
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+
+
+
+
+
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# The .vscode folder contains launch configuration and tasks you configure in
+# VS Code which you may wish to be included in version control, so this line
+# is commented out by default.
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+
+# Symbolication related
+app.*.symbols
+
+# Obfuscation related
+app.*.map.json
+
+# Android Studio will place build artifacts here
+/android/app/debug
+/android/app/profile
+/android/app/release
