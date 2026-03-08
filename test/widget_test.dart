@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:line_theme_tester/main.dart';
+import 'package:line_theme_tester/app/line_theme_app.dart';
 
 void main() {
   testWidgets('renders theme tester shell', (WidgetTester tester) async {

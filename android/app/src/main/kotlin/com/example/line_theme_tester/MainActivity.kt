@@ -69,7 +69,6 @@ class MainActivity : FlutterActivity() {
 			.setMethodCallHandler { call, result ->
 				when (call.method) {
 					"getShizukuStatus" -> result.success(getShizukuStatusInternal())
-					"isShizukuReady" -> result.success(isShizukuReadyInternal())
 					"requestShizukuPermission" -> requestShizukuPermission(result)
 					"listInstalledThemes" -> {
 						runCatching {
