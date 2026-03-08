@@ -161,7 +161,7 @@ class ThemeWorkbenchController extends ChangeNotifier with WidgetsBindingObserve
     }
 
     if (status.shouldShowRationale) {
-      return 'Shizuku 已連線，但此 app 先前被拒絕授權。請到 Shizuku 的已授權/已拒絕應用程式清單裡，重新允許 LINE Theme Tester。';
+      return 'Shizuku 已連線，但此 app 先前被拒絕授權。請到 Shizuku 的已授權/已拒絕應用程式清單裡，重新允許 LINE Theme。';
     }
 
     return 'Shizuku 已連線，但尚未授權給此 app。按下按鈕後應該會跳出授權視窗；如果沒有，先把 app 重開再試一次。';

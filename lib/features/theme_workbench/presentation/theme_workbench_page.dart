@@ -321,12 +321,12 @@ class _UrlSection extends StatelessWidget {
           const SizedBox(height: 14),
           SizedBox(
             width: double.infinity,
-            child: FilledButton.icon(onPressed: state.resolvingTheme || state.applyingTheme ? null : controller.resolveTheme, icon: const Icon(Icons.travel_explore_rounded), label: Text(state.resolvingTheme ? '解析中...' : '先解析網址')),
+            child: FilledButton.icon(onPressed: state.resolvingTheme || state.applyingTheme ? null : controller.resolveTheme, icon: const Icon(Icons.travel_explore_rounded), label: Text(state.resolvingTheme ? '解析中...' : '解析網址')),
           ),
           const SizedBox(height: 10),
           SizedBox(
             width: double.infinity,
-            child: OutlinedButton.icon(onPressed: (!state.hasFileAccess || state.isBusy || state.selectedSlot == null) ? null : controller.applyTheme, icon: const Icon(Icons.auto_fix_high_rounded), label: Text(state.applyingTheme ? '套用中...' : '下載並套用到選定槽位')),
+            child: OutlinedButton.icon(onPressed: (!state.hasFileAccess || state.isBusy || state.selectedSlot == null) ? null : controller.applyTheme, icon: const Icon(Icons.auto_fix_high_rounded), label: Text(state.applyingTheme ? '套用中...' : '下載並套用')),
           ),
         ],
       ),
