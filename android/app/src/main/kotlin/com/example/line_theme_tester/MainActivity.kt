@@ -1,4 +1,4 @@
-package com.example.line_theme_tester
+package com.example.line_theme
 
 import android.content.pm.PackageManager
 import android.os.Bundle
@@ -13,7 +13,7 @@ import java.lang.reflect.Method
 
 class MainActivity : FlutterActivity() {
 	private companion object {
-		const val CHANNEL_NAME = "line_theme_tester/theme_access"
+		const val CHANNEL_NAME = "line_theme/theme_access"
 		const val REQUEST_CODE_SHIZUKU_PERMISSION = 4108
 		const val THEME_ROOT = "/storage/emulated/0/Android/data/jp.naver.line.android/files/theme"
 		val NEW_PROCESS_METHOD: Method by lazy {

@@ -1,4 +1,4 @@
-# LINE Theme Tester
+# LINE Theme
 
 這是一個 Android 導向的 Flutter 測試工具
 
@@ -14,7 +14,7 @@ Samsung A32 這類裝置通常會封鎖一般 app 存取 `Android/data`，因此
 
 1. 安裝 Shizuku app
 2. 用無線除錯或電腦 adb 啟動 Shizuku
-3. 回到 LINE Theme Tester，按「請求 Shizuku 授權」
+3. 回到 LINE Theme，按「請求 Shizuku 授權」
 
 透過 Shizuku 直接列出 `/storage/emulated/0/Android/data/jp.naver.line.android/files/theme` 
 

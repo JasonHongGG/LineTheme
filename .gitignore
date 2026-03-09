@@ -7,15 +7,15 @@ Line Theme/*.pyc
 Line Theme/
 
 # Flutter project artifacts
-line_theme_tester/.dart_tool/
-line_theme_tester/.flutter-plugins
-line_theme_tester/.flutter-plugins-dependencies
-line_theme_tester/.packages
-line_theme_tester/.pub-cache/
-line_theme_tester/build/
-line_theme_tester/android/.gradle/
-line_theme_tester/android/local.properties
-line_theme_tester/*.iml
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+build/
+android/.gradle/
+android/local.properties
+*.iml
 
 # IDE and OS files
 .idea/

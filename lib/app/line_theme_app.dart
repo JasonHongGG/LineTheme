@@ -3,8 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 import '../features/theme_workbench/presentation/theme_workbench_page.dart';
 
-class LineThemeTesterApp extends StatelessWidget {
-  const LineThemeTesterApp({super.key});
+class LineThemeApp extends StatelessWidget {
+  const LineThemeApp({super.key});
 
   @override
   Widget build(BuildContext context) {
